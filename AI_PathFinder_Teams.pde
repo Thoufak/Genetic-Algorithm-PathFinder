@@ -246,7 +246,7 @@ void draw() {
           //score = 1*(1500-final_dist)+0.5*(1500-closest_dist)+1*(1000-goal_turn)+0.5*(1000-lastmove_turn)
           float score;
           float final_dist = dist(generation[j][t].get_X(), generation[j][t].get_Y(), 760, 250);
-          if (generation[j][t].get_state()==1) //got gold
+          if (generation[j][t].get_state()==1) //got goal
           score = 1*(1500-final_dist)+0.5*(1500-final_dist)+1*(1000-goal_turn[j][t])+0.3*(1000-goal_turn[j][t]);
           else
             score = 1*(1500-final_dist)+0.5*(1500-goal_closest[j][t])+1*(1000-1000)+0.3*(1000-goal_turn[j][t]);
